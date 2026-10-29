@@ -1,0 +1,7 @@
+aws_region    = "us-east-1"
+project_name = "aws-etl-iac-lab"
+owner        = "Your-Name"
+
+# Set to true only in a disposable sandbox so `terraform destroy` can remove
+# a bucket that contains ETL outputs and Athena query results.
+force_destroy = true
