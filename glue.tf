@@ -20,11 +20,11 @@ resource "aws_glue_job" "sales_etl" {
   }
 
   default_arguments = {
-    "--SOURCE_PATH"                     = "s3://${aws_s3_bucket.etl.bucket}/raw/"
-    "--TARGET_PATH"                     = "s3://${aws_s3_bucket.etl.bucket}/curated/"
-    "--REJECTED_PATH"                   = "s3://${aws_s3_bucket.etl.bucket}/rejected/"
-    "--job-language"                    = "python"
-    "--enable-metrics"                  = "true"
+    "--SOURCE_PATH"                      = "s3://${aws_s3_bucket.etl.bucket}/raw/"
+    "--TARGET_PATH"                      = "s3://${aws_s3_bucket.etl.bucket}/curated/"
+    "--REJECTED_PATH"                    = "s3://${aws_s3_bucket.etl.bucket}/rejected/"
+    "--job-language"                     = "python"
+    "--enable-metrics"                   = "true"
     "--enable-continuous-cloudwatch-log" = "true"
   }
 
